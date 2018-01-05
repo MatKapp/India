@@ -4,6 +4,7 @@ import model.Location;
 import model.Room;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Database {
     private static ArrayList<Location> locations;
@@ -33,6 +34,14 @@ public class Database {
         locations.add(floor1);
         locations.add(floor2);
         locations.add(building1);
+    }
+
+    public static List<Integer> getIndexes(){
+        List<Integer> indexes = new ArrayList<>();
+        for(Location location : locations){
+            indexes.add(location.getId());
+        }
+        return indexes;
     }
 
     public static float getArea(int index){
