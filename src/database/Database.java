@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Database {
-    private static ArrayList<Location> locations;
+    private static List<Location> locations;
 
     public static void reset(){
         //Create all locations
@@ -34,6 +34,10 @@ public class Database {
         locations.add(floor1);
         locations.add(floor2);
         locations.add(building1);
+    }
+
+    public static void setLocationsForTests(List<Location> locations){
+        Database.locations = locations;
     }
 
     public static List<Integer> getIndexes(){
