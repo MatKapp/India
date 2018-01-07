@@ -16,4 +16,4 @@
         W części Repozytorium kodu wybrać Git i podać URL: https://github.com/MatKapp/India
         Zapisz
 8. Kliknąć Uruchom
-9. Jeżeli zadanie zakonczylo się pomyślnie to sie ciesz
+9. Jeżeli zadanie zakonczylo się pomyślnie to sie ciesz!
