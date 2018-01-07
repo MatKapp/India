@@ -3,13 +3,25 @@ package model;  // package model
 import java.util.ArrayList;
 
 /**
- * Models location object
+ * Models location object, implementation of Composite design pattern
  * @author Jakub Sztyma
  * @version 1.0
  */
 public class Location {
+
+    /**
+     * Location's Id
+     */
     private int id;
+
+    /**
+     * Location's Name
+     */
     private String Name;
+
+    /**
+     * Location's childred, the child's type is Location
+     */
     private ArrayList<Location> children;
 
     /**

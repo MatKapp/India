@@ -14,6 +14,9 @@ import java.util.List;
  */
 public class Database {
 
+    /**
+     * List of locations in our Database object
+     */
     private static List<Location> locations;
 
     /**

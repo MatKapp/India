@@ -1,11 +1,15 @@
 package model;  // package model
 
 /**
- * Models room object extends Location class
+ * Models room object extends Location class, implementation of Composite design pattern
  * @author Jakub Sztyma
  * @version 1.0
  */
 public class Room extends Location {
+
+    /**
+     * Room's area
+     */
     private float area;
 
     /**
