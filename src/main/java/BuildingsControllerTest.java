@@ -53,10 +53,37 @@ public class BuildingsControllerTest {
 
     @Test
     public void testDoPost() {
-        assertTrue(buildingsController.doPost(1).getEntity() instanceof Float);
         assertEquals(buildingsController.doPost(1).getEntity(),1.0f);
         assertEquals(buildingsController.doPost(2).getEntity(),2.0f);
         assertEquals(buildingsController.doPost(3).getEntity(),3.0f);
         assertEquals(buildingsController.doPost(6).getEntity(),6.0f);
+    }
+
+    @Test
+    public void testDoPostType() {
+        assertTrue(buildingsController.doPost(1).getEntity() instanceof Float);
+        assertTrue(buildingsController.doPost(2).getEntity() instanceof Float);
+        assertTrue(buildingsController.doPost(3).getEntity() instanceof Float);
+        assertTrue(buildingsController.doPost(6).getEntity() instanceof Float);
+    }
+
+    @Test
+    public void testDoPostAndGetArea() {
+        assertEquals(buildingsController.doPost(1).getEntity(),buildingsController.getArea(1));
+        assertEquals(buildingsController.doPost(2).getEntity(),buildingsController.getArea(2));
+        assertEquals(buildingsController.doPost(3).getEntity(),buildingsController.getArea(3));
+        assertEquals(buildingsController.doPost(6).getEntity(),buildingsController.getArea(6));
+    }
+
+    @Test
+    public void testDatabase() {
+        assertEquals(buildingsController.doPost(1).getEntity(),Database.getArea(1));
+        assertEquals(buildingsController.doPost(2).getEntity(),Database.getArea(2));
+        assertEquals(buildingsController.doPost(3).getEntity(),Database.getArea(3));
+        assertEquals(buildingsController.doPost(6).getEntity(),Database.getArea(6));
+        assertEquals(buildingsController.getArea(1),Database.getArea(1),0.1);
+        assertEquals(buildingsController.getArea(2),Database.getArea(2),0.1);
+        assertEquals(buildingsController.getArea(3),Database.getArea(3),0.1);
+        assertEquals(buildingsController.getArea(6),Database.getArea(6),0.1);
     }
 }
