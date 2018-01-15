@@ -1,8 +1,12 @@
 
 import database.Database;
+import model.Location;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 import java.util.List;
+
 
 // The Java class will be hosted at the URI path "/helloworld/{index}"
 @Path("/helloworld")
@@ -13,7 +17,12 @@ public class BuildingsController {
     // The Java method will produce content identified by the MIME Media type "text/plain"
     @Produces("text/html")
     public String doGet() {
-        List<Integer> indexes = Database.getIndexes();
+        List<Integer> indexes = new ArrayList();
+        List<Location> locations = Database.getLocations();
+        for (Location location: locations){
+            indexes.add(location.getId());
+        }
+
         String site = String.format("<form method=\"post\" action=\"helloworld\">\n", "");
         site += "<select name=\"Index\">\n";
         for (Integer index : indexes) {
@@ -25,6 +34,17 @@ public class BuildingsController {
         site += "<input type=\"submit\" value=\"Wybierz lokacje\" name=\"Submit\" /> \n";
         site += "</form>";
         return site;
+    }
+
+    @GET
+    @Path("/locations")
+    // The Java method will produce content identified by the MIME Media type "text/plain"
+    @Produces("application/json")
+    public Response doGetLocations() {
+        List<Location> locations = Database.getLocations();
+        return Response.status(200)
+                .entity(locations)
+                .build();
     }
 
     @GET

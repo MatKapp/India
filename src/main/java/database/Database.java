@@ -29,7 +29,6 @@ public class Database {
         locations = new ArrayList<Location>();
         locations.add(room1);
         locations.add(room2);
-        locations.add(room2);
         locations.add(room3);
         locations.add(floor1);
         locations.add(floor2);
@@ -40,12 +39,8 @@ public class Database {
         Database.locations = locations;
     }
 
-    public static List<Integer> getIndexes(){
-        List<Integer> indexes = new ArrayList<Integer>();
-        for(Location location : locations){
-            indexes.add(location.getId());
-        }
-        return indexes;
+    public static List<Location> getLocations(){
+        return locations;
     }
 
     public static float getArea(int index){
