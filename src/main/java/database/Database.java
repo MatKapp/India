@@ -1,4 +1,5 @@
-package database;
+package database;   // package database
+
 
 import model.Location;
 import model.Room;
@@ -6,9 +7,21 @@ import model.Room;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Database mock
+ * @author Piotr Gorny
+ * @version 1.0
+ */
 public class Database {
+
+    /**
+     * List of locations in our Database object
+     */
     private static List<Location> locations;
 
+    /**
+     * Resets values in Database
+     */
     public static void reset(){
         //Create all locations
         Location room1 = new Room(1, "Room1", 1.0f);
@@ -35,6 +48,11 @@ public class Database {
         locations.add(building1);
     }
 
+    /**
+     * Sets 'locations' field
+     * @param locations list of locations for test
+     */
+
     public static void setLocationsForTests(List<Location> locations){
         Database.locations = locations;
     }
@@ -43,6 +61,11 @@ public class Database {
         return locations;
     }
 
+    /**
+     *Finds the area of a specific location
+     * @param index The location Id we are looking for
+     * @return Area of location we are looking for
+     */
     public static float getArea(int index){
         for(Location location : locations){
             if(location.getId() == index){
