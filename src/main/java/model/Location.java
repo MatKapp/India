@@ -70,4 +70,44 @@ public class Location {
         }
         return totalArea;
     }
+
+    /**
+     * Sums up the cubage of children
+     * @return Total cubage
+     */
+    public float getCube(){
+        float totalCube = 0.0f;
+        for(Location child : children){
+            totalCube += child.getCube();
+        }
+        return totalCube;
+    }
+
+    /**
+     * Counts avarage energy consumption on heating of children
+     * @return Avarage energy consumption on heating
+     */
+    public float getHeating(){
+        float totalCube = 0.0f;
+        float totalHeating = 0.0f;
+        for(Location child : children){
+            totalCube += child.getCube();
+            totalHeating += child.getHeating()*child.getCube();
+        }
+        return totalHeating/totalCube;
+    }
+
+    /**
+     * Counts avarage illuminance per area unit of children
+     * @return Avarage illuminance
+     */
+    public float getLight(){
+        float totalArea = 0.0f;
+        float totalLight = 0.0f;
+        for(Location child : children){
+            totalArea += child.getArea();
+            totalLight += child.getLight()*child.getArea();
+        }
+        return totalLight/totalArea;
+    }
 }

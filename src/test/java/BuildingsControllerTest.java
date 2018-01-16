@@ -17,9 +17,9 @@ public class BuildingsControllerTest {
     public void setUp() throws Exception {
         buildingsController = new BuildingsController();
         //Create all locations
-        Location room1 = new Room(1, "Room1", 1.0f);
-        Location room2 = new Room(2, "Room2", 2.0f);
-        Location room3 = new Room(3, "Room3", 3.0f);
+        Location room1 = new Room(1, "Room1", 1.0f, 3.0f, 5.0f, 10.0f);
+        Location room2 = new Room(2, "Room2", 2.0f, 6.0f, 10.0f, 11.0f);
+        Location room3 = new Room(3, "Room3", 3.0f, 7.0f, 7.0f, 15.0f);
         Location floor1 = new Location(4, "Floor1");
         Location floor2 = new Location(5, "Floor2");
         Location building1 = new Location(6, "Building1");
