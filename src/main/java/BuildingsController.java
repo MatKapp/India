@@ -12,11 +12,11 @@ import java.util.List;
 @Path("/india")
 public class BuildingsController {
 
-//    @GET
-//    @Path("")
-//    // The Java method will produce content identified by the MIME Media type "text/plain"
-//    @Produces("text/html")
-//    public String doGet() {
+    @GET
+    @Path("")
+    // The Java method will produce content identified by the MIME Media type "text/plain"
+    @Produces("text/html")
+    public String doGet() {
 //        List<Integer> indexes = new ArrayList();
 //        List<Location> locations = Database.getLocations();
 //        for (Location location: locations){
@@ -33,8 +33,16 @@ public class BuildingsController {
 //        site += "</select>\n";
 //        site += "<input type=\"submit\" value=\"Wybierz lokacje\" name=\"Submit\" /> \n";
 //        site += "</form>";
-//        return site;
-//    }
+        String site = "<html>\n" +
+                "      <head>\n" +
+                "          <meta charset=\"UTF-8\">\n" +
+                "      </head>\n" +
+                "      <body>\n" +
+                "           <h1>W celu sprawdzenia budynków należu uruchomić aplikację</h1>" +
+                "      </body>\n" +
+                "</html>";
+        return site;
+    }
 
     @GET
     @Path("/locations")
