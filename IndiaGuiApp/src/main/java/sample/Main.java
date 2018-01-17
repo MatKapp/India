@@ -7,13 +7,16 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
+import javafx.scene.control.Separator;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
@@ -25,7 +28,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Pane root = new Pane();
 
         //Get all locations and show them in frontend
         EndPoint getLocations = new EndPoint("http://localhost:8080/India_war_exploded/india/locations","GetLocations");
@@ -43,47 +45,106 @@ public class Main extends Application {
         typesList.addAll(endPoints);
 
         //Prepare components
+        int prefWidth = 200;
+        int defaultX = 50;
+        int labelOffset = 20;
+        int groupOffset = 40;
+
+        final Label locationNameLabel = new Label("Choose location to check");
+        locationNameLabel.setLayoutX(defaultX);
+        locationNameLabel.setPrefWidth(prefWidth);
+        locationNameLabel.setLayoutY(20);
+
         final ChoiceBox locationNameChoose = new ChoiceBox();
         locationNameChoose.setConverter(new LocationConverter());
         locationNameChoose.setItems(itemsList);
-        locationNameChoose.setLayoutX(100);
-        locationNameChoose.setPrefWidth(100);
-        locationNameChoose.setLayoutY(10);
+        locationNameChoose.setLayoutX(defaultX);
+        locationNameChoose.setPrefWidth(prefWidth);
+        locationNameChoose.setLayoutY(labelOffset + locationNameLabel.getLayoutY());
         locationNameChoose.setValue(itemsList.get(0));
+
+        final Label dataTypeLabel = new Label("Choose query to ask");
+        dataTypeLabel.setLayoutX(defaultX);
+        dataTypeLabel.setPrefWidth(prefWidth);
+        dataTypeLabel.setLayoutY(groupOffset + locationNameChoose.getLayoutY());
 
         final ChoiceBox dataTypeChoose = new ChoiceBox();
         dataTypeChoose.setConverter(new EndPointConverter());
         dataTypeChoose.setItems(typesList);
-        dataTypeChoose.setLayoutX(100);
-        dataTypeChoose.setPrefWidth(100);
-        dataTypeChoose.setLayoutY(50);
+        dataTypeChoose.setLayoutX(defaultX);
+        dataTypeChoose.setPrefWidth(prefWidth);
+        dataTypeChoose.setLayoutY(labelOffset + dataTypeLabel.getLayoutY());
         dataTypeChoose.setValue(typesList.get(0));
 
-        final Label resultLabel = new Label("");
-        resultLabel.setLayoutX(100);
-        resultLabel.setPrefWidth(100);
-        resultLabel.setLayoutY(150);
+        Button confirmButton = new Button();
+        confirmButton.setText("Get Data!!!");
+        confirmButton.setLayoutX(defaultX);
+        confirmButton.setPrefWidth(prefWidth);
+        confirmButton.setLayoutY(groupOffset + labelOffset + dataTypeChoose.getLayoutY());
+        confirmButton.setTextFill(Color.WHITE);
+        confirmButton.setBackground(new Background(new BackgroundFill(Color.BLUE,
+                new CornerRadii(5), Insets.EMPTY)));
 
-        Button button = new Button();
-        button.setText("Get Data!!!");
-        button.setOnAction(new EventHandler<ActionEvent>() {
+        final Separator resultSeparator = new Separator();
+        resultSeparator.setMaxWidth(prefWidth);
+        resultSeparator.setMinWidth(prefWidth);
+        resultSeparator.setLayoutX(defaultX);
+        resultSeparator.setLayoutY(groupOffset +  confirmButton.getLayoutY());
+        resultSeparator.setBackground(new Background(new BackgroundFill(Color.BLUE,
+                new CornerRadii(5), Insets.EMPTY)));
+        resultSeparator.setVisible(false);
+
+        final Label resultInfoLabel = new Label();
+        resultInfoLabel.setFont(Font.font("Regular", 14));
+        resultInfoLabel.setLayoutX(defaultX);
+        resultInfoLabel.setPrefWidth(prefWidth);
+        resultInfoLabel.setLayoutY(labelOffset +  resultSeparator.getLayoutY());
+
+        final Label resultLabel = new Label();
+        resultLabel.setLayoutX(50 + defaultX);
+        resultLabel.setPrefWidth(prefWidth);
+        resultLabel.setLayoutY(labelOffset + resultInfoLabel.getLayoutY());
+
+        //Add actions
+        confirmButton.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
                 EndPoint currentEndPoint = (EndPoint) dataTypeChoose.getValue();
                 Location currentLocation = (Location) locationNameChoose.getValue();
+                resultSeparator.setVisible(true);
+                resultInfoLabel.setText("Your result:");
                 resultLabel.setText(currentEndPoint.GetData(currentLocation.id));
             }
         });
-        button.setLayoutX(100);
-        button.setPrefWidth(100);
-        button.setLayoutY(100);
 
-        root.getChildren().add(button);
-        root.getChildren().add(locationNameChoose);
-        root.getChildren().add(dataTypeChoose);
-        root.getChildren().add(resultLabel);
+        //Create header pane
+        Pane header = new Pane();
 
-        primaryStage.setTitle("India");
-        primaryStage.setScene(new Scene(root, 300, 300));
+        Label h1 = new Label("Get info about locations!");
+        h1.setFont(Font.font("Regular", 16));
+        h1.setLayoutX(defaultX);
+        h1.setPrefWidth(prefWidth);
+        h1.setLayoutY(20);
+        header.getChildren().add(h1);
+
+        //Add components to pane
+        Pane body = new Pane();
+        body.getChildren().add(locationNameLabel);
+        body.getChildren().add(locationNameChoose);
+        body.getChildren().add(dataTypeLabel);
+        body.getChildren().add(dataTypeChoose);
+        body.getChildren().add(confirmButton);
+        body.getChildren().add(resultSeparator);
+        body.getChildren().add(resultInfoLabel);
+        body.getChildren().add(resultLabel);
+
+        //Add panes to root
+        Pane root = new Pane();
+        root.getChildren().add(header);
+        body.setLayoutY(50);
+        root.getChildren().add(body);
+
+        primaryStage.setTitle("Building Info");
+        primaryStage.setScene(new Scene(root, 300, 350));
         primaryStage.show();
     }
 
