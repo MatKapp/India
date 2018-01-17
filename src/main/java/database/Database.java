@@ -74,4 +74,28 @@ public class Database {
         }
         return 0.0f;
     }
+    public static float getCube(int index){
+        for(Location location : locations){
+            if(location.getId() == index){
+                return location.getCube();
+            }
+        }
+        return 0.0f;
+    }
+    public static float getHeating(int index){
+        for(Location location : locations){
+            if(location.getId() == index){
+                return location.getHeating();
+            }
+        }
+        return 0.0f;
+    }
+    public static float getLight(int index){
+        for(Location location : locations){
+            if(location.getId() == index){
+                return location.getLight();
+            }
+        }
+        return 0.0f;
+    }
 }

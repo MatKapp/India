@@ -27,21 +27,22 @@ public class Main extends Application {
         //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Pane root = new Pane();
 
-        EndPoint getLocations = new EndPoint("http://localhost:8080/India_war_exploded/helloworld/locations","GetLocations");
-
+        //Get all locations and show them in frontend
+        EndPoint getLocations = new EndPoint("http://localhost:8080/India_war_exploded/india/locations","GetLocations");
         List<Location> locations = Connection.GetLocations(getLocations.url);
-
         ObservableList<Location> itemsList = FXCollections.observableArrayList();
-
         itemsList.addAll(locations);
 
+        //Add all endpoints and add them to frontend
         List<EndPoint> endPoints = new ArrayList();
-        endPoints.add(new EndPoint("http://localhost:8080/India_war_exploded/helloworld","Area"));
-        endPoints.add(new EndPoint("","Cube"));
-
+        endPoints.add(new EndPoint("http://localhost:8080/India_war_exploded/india/area","Area"));
+        endPoints.add(new EndPoint("http://localhost:8080/India_war_exploded/india/cube","Cube"));
+        endPoints.add(new EndPoint("http://localhost:8080/India_war_exploded/india/heating","Heating"));
+        endPoints.add(new EndPoint("http://localhost:8080/India_war_exploded/india/light","Light"));
         ObservableList<EndPoint> typesList = FXCollections.observableArrayList();
         typesList.addAll(endPoints);
 
+        //Prepare components
         final ChoiceBox locationNameChoose = new ChoiceBox();
         locationNameChoose.setConverter(new LocationConverter());
         locationNameChoose.setItems(itemsList);
@@ -81,7 +82,7 @@ public class Main extends Application {
         root.getChildren().add(dataTypeChoose);
         root.getChildren().add(resultLabel);
 
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("India");
         primaryStage.setScene(new Scene(root, 300, 300));
         primaryStage.show();
     }
