@@ -48,6 +48,17 @@ public class BuildingsController {
     }
 
     @POST
+    @Path("/checkHeatingAlert")
+    // The Java method will produce content identified by the MIME Media type "text/plain"
+    @Produces("text/plain")
+    public Response doCheckHeatingAlert(@FormParam("Index") int index) {
+        String locations = Database.checkHeatingAlert(index);
+        return Response.status(200)
+                .entity(locations)
+                .build();
+    }
+
+    @POST
     @Path("/area")
     // The Java method will produce content identified by the MIME Media type "text/plain"
     @Produces("text/plain")

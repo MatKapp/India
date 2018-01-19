@@ -1,6 +1,7 @@
 package database;   // package database
 
 
+import model.HeatingVisitor;
 import model.Location;
 import model.Room;
 
@@ -13,6 +14,8 @@ import java.util.List;
  * @version 1.0
  */
 public class Database {
+
+    private static float alertTreshold = 1.0f;
 
     /**
      * List of locations in our Database object
@@ -90,6 +93,24 @@ public class Database {
         }
         return 0.0f;
     }
+
+    public static String checkHeatingAlert(int index){
+        String stringResult = "";
+        for(Location location : locations){
+            if(location.getId() == index){
+                HeatingVisitor visitor = new HeatingVisitor();
+                for(Location room : location.getChildren()){
+                    if(room.accept(visitor) >= alertTreshold){
+                        stringResult += room.getName();
+                        stringResult += String.format(",%n");;
+                    }
+                }
+                break;
+            }
+        }
+        return stringResult;
+    }
+
     public static float getLight(int index){
         for(Location location : locations){
             if(location.getId() == index){

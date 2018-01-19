@@ -10,10 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.Separator;
+import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -31,7 +28,9 @@ public class Main extends Application {
 
         //Get all locations and show them in frontend
         EndPoint getLocations = new EndPoint("http://localhost:8080/India_war_exploded/india/locations","GetLocations");
+        final EndPoint checkHeatingAlert = new EndPoint("http://localhost:8080/India_war_exploded/india/checkHeatingAlert","GetLocations");
         List<Location> locations = Connection.GetLocations(getLocations.url);
+        List<Location> locationsWithAlert = Connection.GetLocations(checkHeatingAlert.url);
         ObservableList<Location> itemsList = FXCollections.observableArrayList();
         itemsList.addAll(locations);
 
@@ -116,6 +115,58 @@ public class Main extends Application {
             }
         });
 
+
+        Button checkAlertButton = new Button();
+        checkAlertButton.setText("Check alert!");
+        checkAlertButton.setLayoutX(defaultX);
+        checkAlertButton.setPrefWidth(prefWidth);
+        checkAlertButton.setLayoutY(groupOffset + labelOffset + resultLabel.getLayoutY());
+        checkAlertButton.setTextFill(Color.WHITE);
+        checkAlertButton.setBackground(new Background(new BackgroundFill(Color.BLUE,
+                new CornerRadii(5), Insets.EMPTY)));
+
+        Label label1 = new Label("Treshold:");
+        TextField textField = new TextField();
+        HBox hb = new HBox();
+        hb.getChildren().addAll(label1, textField);
+        hb.setSpacing(10);
+        hb.setLayoutX(defaultX);
+        hb.setLayoutY(groupOffset + labelOffset + checkAlertButton.getLayoutY());
+
+        final Separator alertResultSeparator = new Separator();
+        alertResultSeparator.setMaxWidth(prefWidth);
+        alertResultSeparator.setMinWidth(prefWidth);
+        alertResultSeparator.setLayoutX(defaultX);
+        alertResultSeparator.setLayoutY(groupOffset +  hb.getLayoutY());
+        alertResultSeparator.setBackground(new Background(new BackgroundFill(Color.BLUE,
+                new CornerRadii(5), Insets.EMPTY)));
+        alertResultSeparator.setVisible(false);
+
+        final Label alertResultInfoLabel = new Label();
+        alertResultInfoLabel.setFont(Font.font("Regular", 14));
+        alertResultInfoLabel.setLayoutX(defaultX);
+        alertResultInfoLabel.setPrefWidth(prefWidth);
+        alertResultInfoLabel.setLayoutY(labelOffset +  alertResultSeparator.getLayoutY());
+
+        final Label alertResultLabel = new Label();
+        alertResultLabel.setLayoutX(50 + defaultX);
+        alertResultLabel.setPrefWidth(prefWidth);
+        alertResultLabel.setLayoutY(labelOffset + alertResultInfoLabel.getLayoutY());
+        //Add actions
+        checkAlertButton.setOnAction(new EventHandler<ActionEvent>() {
+                public void handle(ActionEvent event) {
+                    Location currentLocation = (Location) locationNameChoose.getValue();
+                    List<Location> locationsWithAlert = Connection.GetLocations(checkHeatingAlert.url);
+                    String result = checkHeatingAlert.GetData(currentLocation.id);//"";
+//                    for (int i=0; i<locationsWithAlert.size(); i++){
+//                        result += locationsWithAlert.get(i).name +String.format(",%n");
+//                    }
+                    alertResultSeparator.setVisible(true);
+                    alertResultInfoLabel.setText("Your result:");
+                    alertResultLabel.setText(result);
+                }
+        });
+
         //Create header pane
         Pane header = new Pane();
 
@@ -136,6 +187,11 @@ public class Main extends Application {
         body.getChildren().add(resultSeparator);
         body.getChildren().add(resultInfoLabel);
         body.getChildren().add(resultLabel);
+        body.getChildren().add(checkAlertButton);
+       // body.getChildren().add(hb);
+        body.getChildren().add(alertResultSeparator);
+        body.getChildren().add(alertResultInfoLabel);
+        body.getChildren().add(alertResultLabel);
 
         //Add panes to root
         Pane root = new Pane();
@@ -144,7 +200,7 @@ public class Main extends Application {
         root.getChildren().add(body);
 
         primaryStage.setTitle("Building Info");
-        primaryStage.setScene(new Scene(root, 300, 350));
+        primaryStage.setScene(new Scene(root, 300, 600));
         primaryStage.show();
     }
 

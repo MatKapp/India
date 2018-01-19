@@ -5,7 +5,7 @@ package model;  // package model
  * @author Jakub Sztyma
  * @version 1.0
  */
-public class Room extends Location {
+public class Room extends Location{
 
     /**
      * Room's area

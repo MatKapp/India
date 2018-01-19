@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @author Jakub Sztyma
  * @version 1.0
  */
-public class Location {
+public class Location implements Visitable{
 
     /**
      * Location's Id
@@ -33,6 +33,10 @@ public class Location {
         this.id = id;
         Name = name;
         this.children = new ArrayList<Location>();
+    }
+
+    public ArrayList<Location> getChildren() {
+        return this.children;
     }
 
     /**
@@ -109,5 +113,9 @@ public class Location {
             totalLight += child.getLight()*child.getArea();
         }
         return totalLight/totalArea;
+    }
+
+    public double accept(Visitor visitor) {
+        return this.getHeating();
     }
 }
