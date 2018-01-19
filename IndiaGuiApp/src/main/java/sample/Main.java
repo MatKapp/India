@@ -18,21 +18,36 @@ import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import sun.rmi.runtime.Log;
 
 public class Main extends Application {
+    static final Logger LOG = LoggerFactory.getLogger(Main.class);
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
 
+        LOG.info("App started");
+
         //Get all locations and show them in frontend
         EndPoint getLocations = new EndPoint("http://localhost:8080/India_war_exploded/india/locations","GetLocations");
         final EndPoint checkHeatingAlert = new EndPoint("http://localhost:8080/India_war_exploded/india/checkHeatingAlert","GetLocations");
         List<Location> locations = Connection.GetLocations(getLocations.url);
+<<<<<<< HEAD
         List<Location> locationsWithAlert = Connection.GetLocations(checkHeatingAlert.url);
+=======
+        if(locations.isEmpty()){
+            LOG.error("No Locations downloaded");
+        }else{
+            LOG.debug("Downloaded Locations");
+        }
+>>>>>>> 8e6d19e4edddf826032a8d06cb43fbbd4f9c57e9
         ObservableList<Location> itemsList = FXCollections.observableArrayList();
         itemsList.addAll(locations);
+
+
 
         //Add all endpoints and add them to frontend
         List<EndPoint> endPoints = new ArrayList();
@@ -42,6 +57,8 @@ public class Main extends Application {
         endPoints.add(new EndPoint("http://localhost:8080/India_war_exploded/india/light","Light"));
         ObservableList<EndPoint> typesList = FXCollections.observableArrayList();
         typesList.addAll(endPoints);
+
+        LOG.debug("Added endpoints");
 
         //Prepare components
         int prefWidth = 200;
@@ -107,11 +124,14 @@ public class Main extends Application {
         //Add actions
         confirmButton.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
+                LOG.info("Requesting data from server");
                 EndPoint currentEndPoint = (EndPoint) dataTypeChoose.getValue();
                 Location currentLocation = (Location) locationNameChoose.getValue();
                 resultSeparator.setVisible(true);
                 resultInfoLabel.setText("Your result:");
-                resultLabel.setText(currentEndPoint.GetData(currentLocation.id));
+                String responseData = currentEndPoint.GetData(currentLocation.id);
+                resultLabel.setText(responseData);
+                LOG.debug("Requested {} for index {} is {}", currentEndPoint.typeName, currentLocation.id, responseData);
             }
         });
 
