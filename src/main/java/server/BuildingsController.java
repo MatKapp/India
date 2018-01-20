@@ -1,6 +1,9 @@
 package server;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import server.database.Database;
 import server.model.Location;
+import sun.rmi.runtime.Log;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
@@ -10,7 +13,7 @@ import java.util.List;
 // The Java class will be hosted at the URI path "/india/{index}"
 @Path("/india")
 public class BuildingsController {
-
+    final static Logger LOG = LoggerFactory.getLogger(BuildingsController.class);
     @GET
     @Path("")
     // The Java method will produce content identified by the MIME Media type "text/plain"
@@ -32,6 +35,12 @@ public class BuildingsController {
 //        site += "</select>\n";
 //        site += "<input type=\"submit\" value=\"Wybierz lokacje\" name=\"Submit\" /> \n";
 //        site += "</form>";
+        LOG.info("Server Started");
+        LOG.debug("Server Started");
+        LOG.error("Server Started");
+        LOG.trace("Server Started");
+        LOG.warn("Server Started");
+
         String site = "<html>\n" +
                 "      <head>\n" +
                 "          <meta charset=\"UTF-8\">\n" +

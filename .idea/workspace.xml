@@ -11,35 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b8091d29-f2ce-4116-a23c-867a629dd701" name="Default" comment="Cubage, energy consumption and illuminance calculations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/IndiaGuiApp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/IndiaGuiApp/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/model/Location.html" afterPath="$PROJECT_DIR$/Javadoc/model/Location.html" />
-      <change beforePath="$PROJECT_DIR$/Javadoc/model/Room.html" afterPath="$PROJECT_DIR$/Javadoc/model/Room.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/BuildingsController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/MyApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/database/Database.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/HeatingVisitor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/Location.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/Room.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/Visitable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/Visitor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BuildingsController.java" afterPath="$PROJECT_DIR$/src/main/java/server/BuildingsController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyApplication.java" afterPath="$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/Database.java" afterPath="$PROJECT_DIR$/src/main/java/server/database/Database.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/HeatingVisitor.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/HeatingVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Location.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Location.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Room.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Room.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Visitable.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Visitable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Visitor.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Visitor.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BuildingsControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/server/BuildingsControllerTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BuildingsController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyApplication.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/Database.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/HeatingVisitor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Location.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Room.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Visitable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Visitor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BuildingsControllerTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/India.iml" afterPath="$PROJECT_DIR$/India.iml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/BuildingsController.java" afterPath="$PROJECT_DIR$/src/main/java/server/BuildingsController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/MyApplication.java" afterPath="$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,18 +30,18 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            <state relative-caret-position="153">
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildingsController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BuildingsController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/BuildingsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="35" column="91" lean-forward="true" selection-start-line="35" selection-start-column="91" selection-end-line="35" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,7 +107,6 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/database/Database.java" />
         <option value="$PROJECT_DIR$/src/BuildingsControllerTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/BuildingsControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Location.java" />
@@ -143,9 +116,12 @@
         <option value="$PROJECT_DIR$/src/main/java/server/model/Visitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/database/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/BuildingsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/BuildingsControllerTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/classes/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/BuildingsController.java" />
       </list>
     </option>
   </component>
@@ -227,39 +203,25 @@
               <item name="India" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="India" type="b2602c69:ProjectViewProjectNode" />
               <item name="India" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="India" type="b2602c69:ProjectViewProjectNode" />
               <item name="India" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="India" type="b2602c69:ProjectViewProjectNode" />
               <item name="India" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="India" type="b2602c69:ProjectViewProjectNode" />
-              <item name="India" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,6 +252,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\India\web\WEB-INF\classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -536,7 +501,7 @@
       <workItem from="1516223693425" duration="393000" />
       <workItem from="1516356802355" duration="2498000" />
       <workItem from="1516448777081" duration="1678000" />
-      <workItem from="1516450474802" duration="267000" />
+      <workItem from="1516450474802" duration="2694000" />
     </task>
     <servers />
   </component>
@@ -573,7 +538,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32744000" />
+    <option name="totallyTimeSpent" value="35171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -630,23 +595,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/BuildingsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/India.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -864,14 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/server/BuildingsControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -882,20 +822,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/BuildingsController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/BuildingsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="442">
+          <caret line="35" column="91" lean-forward="true" selection-start-line="35" selection-start-column="91" selection-end-line="35" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
