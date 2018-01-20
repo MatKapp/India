@@ -35,15 +35,12 @@ public class Main extends Application {
         EndPoint getLocations = new EndPoint("http://localhost:8080/India_war_exploded/india/locations","GetLocations");
         final EndPoint checkHeatingAlert = new EndPoint("http://localhost:8080/India_war_exploded/india/checkHeatingAlert","GetLocations");
         List<Location> locations = Connection.GetLocations(getLocations.url);
-<<<<<<< HEAD
         List<Location> locationsWithAlert = Connection.GetLocations(checkHeatingAlert.url);
-=======
         if(locations.isEmpty()){
             LOG.error("No Locations downloaded");
         }else{
             LOG.debug("Downloaded Locations");
         }
->>>>>>> 8e6d19e4edddf826032a8d06cb43fbbd4f9c57e9
         ObservableList<Location> itemsList = FXCollections.observableArrayList();
         itemsList.addAll(locations);
 
