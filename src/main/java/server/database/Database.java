@@ -1,9 +1,7 @@
-package database;   // package database
+package server.database;   // package database
 
 
-import model.HeatingVisitor;
-import model.Location;
-import model.Room;
+import server.model.*;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package model;  // package model
+package server.model;  // package model
 
 /**
  * Models room object extends Location class, implementation of Composite design pattern

@@ -6,23 +6,40 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/database/Database.java" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/server/database/Database.java" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8091d29-f2ce-4116-a23c-867a629dd701" name="Default" comment="Cubage, energy consumption and illuminance calculations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/IndiaGuiApp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/IndiaGuiApp/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/IndiaGuiApp/src/main/java/sample/Main.java" afterPath="$PROJECT_DIR$/IndiaGuiApp/src/main/java/sample/Main.java" />
-      <change beforePath="$PROJECT_DIR$/IndiaGuiApp/target/classes/sample/Main$1.class" afterPath="$PROJECT_DIR$/IndiaGuiApp/target/classes/sample/Main$1.class" />
-      <change beforePath="$PROJECT_DIR$/IndiaGuiApp/target/classes/sample/Main$2.class" afterPath="$PROJECT_DIR$/IndiaGuiApp/target/classes/sample/Main$2.class" />
-      <change beforePath="$PROJECT_DIR$/IndiaGuiApp/target/classes/sample/Main.class" afterPath="$PROJECT_DIR$/IndiaGuiApp/target/classes/sample/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/artifacts/India_war_exploded/META-INF/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/BuildingsController.class" afterPath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/BuildingsController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/database/Database.class" afterPath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/database/Database.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/Location.class" afterPath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/Location.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BuildingsController.class" afterPath="$PROJECT_DIR$/target/classes/BuildingsController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/Database.class" afterPath="$PROJECT_DIR$/target/classes/database/Database.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Location.class" afterPath="$PROJECT_DIR$/target/classes/model/Location.class" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/model/Location.html" afterPath="$PROJECT_DIR$/Javadoc/model/Location.html" />
+      <change beforePath="$PROJECT_DIR$/Javadoc/model/Room.html" afterPath="$PROJECT_DIR$/Javadoc/model/Room.html" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/BuildingsController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/MyApplication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/database/Database.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/HeatingVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/Location.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/Room.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/Visitable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/India_war_exploded/WEB-INF/classes/model/Visitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BuildingsController.java" afterPath="$PROJECT_DIR$/src/main/java/server/BuildingsController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyApplication.java" afterPath="$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/Database.java" afterPath="$PROJECT_DIR$/src/main/java/server/database/Database.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/HeatingVisitor.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/HeatingVisitor.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Location.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Location.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Room.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Room.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Visitable.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Visitable.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Visitor.java" afterPath="$PROJECT_DIR$/src/main/java/server/model/Visitor.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BuildingsControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/server/BuildingsControllerTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BuildingsController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyApplication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/Database.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/HeatingVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Location.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Room.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Visitable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Visitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BuildingsControllerTest.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,61 +53,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/database/Database.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeatingVisitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/HeatingVisitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Location.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Location.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Room.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Room.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Visitable.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Visitable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="272">
+              <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BuildingsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BuildingsController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/server/BuildingsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1182">
-              <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,22 +75,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MyApplication.java">
+      <file leaf-file-name="BuildingsControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/server/BuildingsControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="323">
+              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,9 +137,15 @@
         <option value="$PROJECT_DIR$/src/main/java/BuildingsControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Location.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BuildingsControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/database/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/BuildingsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MyApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/HeatingVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/model/Visitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/database/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/BuildingsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BuildingsControllerTest.java" />
       </list>
     </option>
   </component>
@@ -176,7 +163,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -199,7 +186,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,6 +220,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="India" type="b2602c69:ProjectViewProjectNode" />
+              <item name="India" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -239,6 +237,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -254,13 +253,19 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="India" type="b2602c69:ProjectViewProjectNode" />
+              <item name="India" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,6 +282,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -529,7 +535,8 @@
       <workItem from="1516119671761" duration="5373000" />
       <workItem from="1516223693425" duration="393000" />
       <workItem from="1516356802355" duration="2498000" />
-      <workItem from="1516448777081" duration="738000" />
+      <workItem from="1516448777081" duration="1678000" />
+      <workItem from="1516450474802" duration="267000" />
     </task>
     <servers />
   </component>
@@ -566,14 +573,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31537000" />
+    <option name="totallyTimeSpent" value="32744000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32767764" sideWeight="0.5484375" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767764" sideWeight="0.5484375" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -589,8 +596,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32767764" sideWeight="0.4515625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -623,8 +630,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Room.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/BuildingsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/BuildingsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
@@ -641,7 +647,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -656,10 +662,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Location.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Room.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyApplication.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/BuildingsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Location.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Room.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/BuildingsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
@@ -669,7 +675,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/database/Database.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
@@ -691,7 +697,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
     <entry file="file://$PROJECT_DIR$/src/HelloWorld.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -707,7 +713,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
     <entry file="file://$PROJECT_DIR$/src/HelloWorld.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -723,7 +729,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
     <entry file="file://$PROJECT_DIR$/src/HelloWorld.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -733,7 +739,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HelloWorld.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java" />
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -810,7 +816,54 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BuildingsControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/BuildingsControllerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/database/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/HeatingVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/model/Visitable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -819,61 +872,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/server/BuildingsControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BuildingsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1182">
-          <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        <state relative-caret-position="323">
+          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/HeatingVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Room.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/BuildingsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Visitable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/MyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

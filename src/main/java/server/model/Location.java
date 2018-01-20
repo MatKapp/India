@@ -1,4 +1,4 @@
-package model;  // package model
+package server.model;  // package model
 
 import java.util.ArrayList;
 

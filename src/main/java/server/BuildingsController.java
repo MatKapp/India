@@ -1,6 +1,6 @@
-
-import database.Database;
-import model.Location;
+package server;
+import server.database.Database;
+import server.model.Location;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;

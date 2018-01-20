@@ -1,6 +1,7 @@
-import database.Database;
-import model.Location;
-import model.Room;
+package server;
+import server.database.Database;
+import server.model.Location;
+import server.model.Room;
 import org.junit.Before;
 import org.junit.Test;
 

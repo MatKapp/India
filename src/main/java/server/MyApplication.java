@@ -1,4 +1,5 @@
-import database.Database;
+package server;
+import server.database.Database;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -14,7 +15,7 @@ public class MyApplication extends Application{
     public Set<Class<?>> getClasses() {
         Database.reset();
         HashSet h = new HashSet<Class<?>>();
-        h.add( BuildingsController.class );
+        h.add( server.BuildingsController.class );
         return h;
     }
 }
