@@ -1,4 +1,6 @@
 package server.model;
+import server.model.Location;
+import server.model.Room;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,9 +14,9 @@ public class RoomTest {
 
     @Before
     public void setUp() throws Exception {
-        Location room1 = new Room(1, "Room1", 1.0f, 3.0f, 5.0f, 10.0f);
-        Location room2 = new Room(2, "Room2", 3.0f, 7.0f, 7.0f, 1.0f);
-        Location room3 = new Room(3, "Room3", 1000.4f, 2000.8f, 1.5f, 1.1f);
+        room1 = new Room(1, "Room1", 1.0f, 3.0f, 5.0f, 10.0f);
+        room2 = new Room(2, "Room2", 3.0f, 7.0f, 7.0f, 1.0f);
+        room3 = new Room(3, "Room3", 1000.4f, 2000.8f, 1.5f, 1.1f);
     }
 
     @Test
@@ -43,13 +45,6 @@ public class RoomTest {
         assertTrue(room1.getLight() == 10.0f);
         assertTrue(room2.getLight() == 1.0f);
         assertTrue(room3.getLight() == 1.1f);
-    }
-
-    @Test
-    public void testGetName() {
-        assertTrue(room1.getName() == "Room1");
-        assertTrue(room2.getName() == "Room2");
-        assertTrue(room3.getName() == "Room3");
     }
 
 }
