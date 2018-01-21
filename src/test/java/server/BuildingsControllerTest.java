@@ -67,4 +67,12 @@ public class BuildingsControllerTest {
         assertEquals(buildingsController.getArea(3).getEntity(),Database.getArea(3));
         assertEquals(buildingsController.getArea(6).getEntity(),Database.getArea(6));
     }
+
+    @Test
+    public void testGetHeating() {
+        assertEquals(buildingsController.getHeating(1).getEntity(),Database.getHeating(1));
+        assertEquals(buildingsController.getHeating(2).getEntity(),Database.getHeating(2));
+        assertEquals(buildingsController.getHeating(3).getEntity(),Database.getHeating(3));
+        assertEquals(buildingsController.getHeating(6).getEntity(),Database.getHeating(6));
+    }
 }
