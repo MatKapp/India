@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class Database {
 
-    private static float alertTreshold = 1.0f;
+    private static float alertTreshold = 7.5f;
 
     /**
      * List of locations in our Database object
@@ -91,6 +91,12 @@ public class Database {
         }
         return 0.0f;
     }
+
+    /**
+     * checks if location's children have heating values over alert treshold
+     * @param index
+     * @return
+     */
 
     public static String checkHeatingAlert(int index){
         String stringResult = "";

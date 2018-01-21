@@ -3,7 +3,7 @@ package server.model;  // package model
 import java.util.ArrayList;
 
 /**
- * Models location object, implementation of Composite design pattern
+ * Models location object, implementation of Composite design pattern Implement Visitable interface
  * @author Jakub Sztyma
  * @version 1.0
  */
@@ -34,6 +34,7 @@ public class Location implements Visitable{
         Name = name;
         this.children = new ArrayList<Location>();
     }
+
 
     public ArrayList<Location> getChildren() {
         return this.children;
@@ -114,6 +115,12 @@ public class Location implements Visitable{
         }
         return totalLight/totalArea;
     }
+
+    /**
+     *Required method for Visitor design pattern
+     * @param visitor  interface
+     * @return  Heating od location
+     */
 
     public double accept(Visitor visitor) {
         return this.getHeating();
